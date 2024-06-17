@@ -9,9 +9,25 @@ document.addEventListener("DOMContentLoaded", function() {
     topGif.style.marginRight = 'auto';
     
     // Set width and height
-    topGif.style.width = '75%'; // Set your desired width
+    topGif.style.width = '75%'; 
     topGif.style.height = 'auto'; // Maintain aspect ratio
   });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const myDiv = document.getElementById('myDiv');
+  
+    // Increase font size
+    myDiv.style.fontSize = '24px'; // Adjust the font size as needed
+  
+    // Adjust vertical alignment
+    myDiv.style.display = 'flex';
+    myDiv.style.alignItems = 'flex-start'; // Align content to the top
+  
+    // Center horizontally
+    myDiv.style.justifyContent = 'center'; // Center horizontally
+  });
+  
   
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -40,20 +56,20 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Create a new div element and append it
     const newDiv = document.createElement('div');
-    newDiv.textContent = 'New Div Element';
+    newDiv.textContent = 'Even these Chucky Movies';
     parent.appendChild(newDiv);
   
     // Using DocumentFragment or cloneNode to create templated content
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < 3; i++) {
       const listItem = document.createElement('li');
-      listItem.textContent = `New Item ${i + 1}`;
+      listItem.textContent = `Child's Play ${i + 1}`;
       fragment.appendChild(listItem);
     }
     parent.appendChild(fragment);
   
     // Modifying HTML or text content in response to user interaction
-    myDiv.textContent = 'Updated content';
+    myDiv.textContent = 'Click4Change';
   
     // Modifying style or CSS classes in response to user interactions
     myDiv.style.color = 'red';
@@ -68,14 +84,14 @@ document.addEventListener("DOMContentLoaded", function() {
   
     function handleClick(event) {
       console.log('Div clicked');
-      // Example: Change background color on click
+      //Change background color on click
       myDiv.style.backgroundColor = 'yellow';
     }
   
     function handleMouseOver(event) {
       console.log('Button hovered');
-      // Example: Change button text on hover
-      button.textContent = 'Hovered!';
+      //Change button text on hover
+      button.textContent = 'Folea';
     }
   
     // Using Browser Object Model (BOM) properties or methods
@@ -96,8 +112,5 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   
-    // Committing changes to Git repository and README file
-  
-    // Add additional code and functionality as needed
   });
   

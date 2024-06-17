@@ -1,21 +1,72 @@
 /* styles.css */
+
+/* Ensure body styles and gradient background are preserved */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to top, #33cccc 0%, #6600cc 100%);
-  }
-  
-  .centered-container {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Ensure body stretches to at least full viewport height */
+}
+
+/* Center the top GIF */
+#top-gif {
+    display: block;
+    margin: 0 auto;
+    width: 75%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Centered container for the centered GIF */
+.centered-container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .gif-frame {
-    border: 5px solid rgb(248, 203, 0); /* Example: Frame around the GIF */
-    display: inline-block; /* Ensure the frame wraps around the image */
-    padding: 10px; /* Adjust the padding inside the frame */
-    background-color: white; /* Ensure the inner padding area remains white */
-  }
-  
+    flex-grow: 1; /* Grow to take remaining space */
+}
+
+/* Frame around the centered GIF */
+.gif-frame {
+    border: 5px solid rgb(248, 203, 0);
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+}
+
+/* New styles for bottom centered elements */
+.bottom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for the hover button */
+#hover-button {
+    margin-right: 20px; /* Adjust spacing between button and form */
+}
+
+/* Additional styles for form */
+#email-form {
+    display: flex;
+    align-items: center;
+}
+
+#email-form input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#email-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
