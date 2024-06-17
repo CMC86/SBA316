@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #33cccc 0%, #6600cc 100%);
+  }
+  
+  .centered-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gif-frame {
+    border: 5px solid rgb(248, 203, 0); /* Example: Frame around the GIF */
+    display: inline-block; /* Ensure the frame wraps around the image */
+    padding: 10px; /* Adjust the padding inside the frame */
+    background-color: white; /* Ensure the inner padding area remains white */
+  }
+  
